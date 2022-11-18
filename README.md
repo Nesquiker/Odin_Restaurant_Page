@@ -1,2 +1,2 @@
-# Odin_Restaurant_Page
+# Odin Restaurant Page
 Dynamically generated web page to work on webpack and js DOM manipulation.
