@@ -9,7 +9,7 @@ export default function buildHome() {
     restaurant_name.textContent = "Lastolje";
     const title_picture = document.createElement("img");
     title_picture.alt = "Fishing boat";
-    title_picture.src = "../content/boat.jpg";
+    title_picture.src = "./content/boat.jpg";
     const about_container = document.createElement("div");
     about_container.classList.add("content_text_group");
     const about_title = document.createElement("h2");
@@ -20,7 +20,7 @@ export default function buildHome() {
         "excellent seafood restaurants. Eat with us and experience seafood at its best.";
     const about_picture  = document.createElement("img");
     about_picture.alt = "Man with raw seafood";
-    about_picture.src = "../content/fresh_fish.jpg";
+    about_picture.src = "./content/fresh_fish.jpg";
     const hours_container = document.createElement("div");
     hours_container.classList.add("content_text_group");
     hours_container.classList.add("hours");

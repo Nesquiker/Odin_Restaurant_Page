@@ -10,7 +10,7 @@ export default function buildContact() {
     contact_us.textContent = "Contact Us";
     const title_picture = document.createElement("img");
     title_picture.alt = "Crabs touching claws";
-    title_picture.src = "../content/crabs_touching.jpg";
+    title_picture.src = "./content/crabs_touching.jpg";
     const about_container = document.createElement("div");
     about_container.classList.add("content_text_group");
     const about_title = document.createElement("h2");
