@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "fancy";
+    src: url("../content/abb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "paragraph";
+    src: url("../content/fg.ttf") format("truetype");
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: antiquewhite;
+    opacity: .8;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: burlywood;
+}
+
+#content {
+    display: grid;
+    grid-template: 100px 1fr 30px / 1fr;
+    height: 100vh;
+    width:100vw;
+    font-family: "Noto Serif", sans-serif;
+    background-image: url(../content/kitchen.jpg);
+    background-size: cover;
+}
+
+/* HEADER */
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+button {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom: black;
+    background-color: burlywood;
+    font-size: clamp(14px, 2vw, 24px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+    flex: 0;
+    padding: 15px;
+    font-family: fancy, "Roboto Light", sans-serif;
+    transition: background-color 1s;
+}
+
+.selected {
+    border-bottom: antiquewhite;
+    background-color: antiquewhite;
+    transition: background-color 1s;
+
+}
+
+/* BODY */
+.body_container {
+    display: grid;
+    grid-template: 1fr / 1fr minmax(300px, 2fr) 1fr;
+    overflow-y: auto;
+}
+
+#content_entry {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: antiquewhite;
+    opacity: .8;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10px;
+}
+
+
+/* FOOTER */
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_notes {
+    flex: 1;
+    font-size: 10px;
+    color: antiquewhite;
+}
+
+
+/* HOME PAGE */
+h1 {
+    font-family: fancy, sans-serif;
+}
+
+h1 {
+    font-size: clamp(50px, 4vw, 70px);
+}
+
+h2 {
+    font-family: "paragraph", sans-serif;
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+img {
+    width: clamp(280px, 40vw, 700px);
+    height: auto;
+    align-self: center;
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+.content_text_group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.content_text_group > * {
+    flex: auto;
+}
+
+.content_text_group > h2, .content_text_group > h1 {
+    align-self: center;
+}
+
+.hours {
+    align-self: center;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+}
+ul > li {
+    margin-bottom: 5px;
+}
+
+p {
+    width: clamp(280px, 40vw, 700px);
+    align-self: center;
+    font-family: "Noto Serif", sans-serif;
+    font-weight: bold;
+}
+
+ #sub_1, #sub_2{
+    font-size: clamp(35px, 3vw, 50px);
+}
