@@ -1,4 +1,11 @@
 
+import "../styles/style.css"
+import t_pic from "../content/platter.jpg";
+import a1_pic from "../content/mussels.jpg";
+import a2_pic from "../content/shrimp.jpg";
+import m1_pic from "../content/seafood_soup.jpg";
+import m2_pic from "../content/tuna_dish.jpg";
+import m3_pic from "../content/Shrimp_and_rice.jpg";
 
 export default function buildMenu() {
     const container = document.querySelector("#content_entry");
@@ -12,7 +19,7 @@ export default function buildMenu() {
     menu_title.textContent = "Menu";
     const title_picture = document.createElement("img");
     title_picture.alt = "Platter of seafood";
-    title_picture.src = "./content/platter.jpg";
+    title_picture.src = t_pic;
 
     /* APPETIZERS */
     const section_title_container = document.createElement("div");
@@ -29,7 +36,7 @@ export default function buildMenu() {
         " Comes with 8 oysters.";
     const app_1_image = document.createElement("img");
     app_1_image.alt = "Picture of Oysters";
-    app_1_image.src = "./content/mussels.jpg";
+    app_1_image.src = a1_pic;
     const appetizer_2 = document.createElement("div");
     appetizer_2.classList.add("content_text_group");
     const app_title_2 = document.createElement("h2");
@@ -39,7 +46,7 @@ export default function buildMenu() {
         " The shrimp come with the head on.";
     const app_2_image = document.createElement("img");
     app_2_image.alt = "Picture of shrimp cocktail";
-    app_2_image.src = "./content/shrimp.jpg";
+    app_2_image.src = a2_pic;
 
     /* MAIN COURSES */
     const main_title_container = document.createElement("div");
@@ -56,7 +63,7 @@ export default function buildMenu() {
         " Served with bread.";
     const main_1_image = document.createElement("img");
     main_1_image.alt = "Picture of Seafood soup";
-    main_1_image.src = "./content/seafood_soup.jpg";
+    main_1_image.src = m1_pic;
 
     /* COURSE 2 */
     const main_2 = document.createElement("div");
@@ -68,7 +75,7 @@ export default function buildMenu() {
         " Served with our home made aoli.";
     const main_2_image = document.createElement("img");
     main_2_image.alt = "Picture of Tuna steaks";
-    main_2_image.src = "./content/tuna_dish.jpg";
+    main_2_image.src = m2_pic;
 
     /* COURSE 2 */
     const main_3 = document.createElement("div");
@@ -80,7 +87,7 @@ export default function buildMenu() {
         " grown locally.";
     const main_3_image = document.createElement("img");
     main_3_image.alt = "Picture of shrimp in rice";
-    main_3_image.src = "./content/Shrimp_and_rice.jpg";
+    main_3_image.src = m3_pic;
 
     /* ADD TO CONTENT */
     title_container.appendChild(welcome);

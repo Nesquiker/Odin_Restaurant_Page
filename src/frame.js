@@ -1,4 +1,5 @@
 import constructTab from "./index";
+import "../styles/style.css"
 
 export default function buildFrame() {
     const container = document.querySelector("#content");

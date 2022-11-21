@@ -2,6 +2,7 @@ import buildFrame from "../src/frame.js"
 import buildHome from "../src/home.js"
 import buildMenu from "../src/menu.js"
 import buildContact from "../src/contact.js"
+import "../styles/style.css"
 
 
 function alert() {

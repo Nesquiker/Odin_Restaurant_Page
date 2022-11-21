@@ -1,4 +1,8 @@
 
+import "../styles/style.css";
+import t_pic from "../content/boat.jpg";
+import a_pic from "../content/fresh_fish.jpg";
+
 export default function buildHome() {
     const container = document.querySelector("#content_entry");
     const title_container = document.createElement("div");
@@ -9,7 +13,7 @@ export default function buildHome() {
     restaurant_name.textContent = "Lastolje";
     const title_picture = document.createElement("img");
     title_picture.alt = "Fishing boat";
-    title_picture.src = "./content/boat.jpg";
+    title_picture.src = t_pic;
     const about_container = document.createElement("div");
     about_container.classList.add("content_text_group");
     const about_title = document.createElement("h2");
@@ -20,7 +24,7 @@ export default function buildHome() {
         "excellent seafood restaurants. Eat with us and experience seafood at its best.";
     const about_picture  = document.createElement("img");
     about_picture.alt = "Man with raw seafood";
-    about_picture.src = "./content/fresh_fish.jpg";
+    about_picture.src = a_pic;
     const hours_container = document.createElement("div");
     hours_container.classList.add("content_text_group");
     hours_container.classList.add("hours");
